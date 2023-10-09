@@ -6,6 +6,8 @@ import CustomDrawer from './CustomDrawer';
 import Quotes from './Quotes';
 import Ads from './Ads';
 import Quotation_Detail from './Quotation_Detail';
+import profile from './profile';
+import Quote_Details from './Quote_Details';
 
 const Drawer = createDrawerNavigator();
 
@@ -13,6 +15,8 @@ const Home = () => {
   return (
     
     <Drawer.Navigator drawerContent={props=><CustomDrawer {...props}/>}>
+      <Drawer.Screen name="Quote_Detail" component={Quote_Details}/>
+      
        <Drawer.Screen name="Quotation_Detail" component={Quotation_Detail}/>
       <Drawer.Screen name="Quotes" component={Quotes}/>
       <Drawer.Screen name="Ads" component={Ads} />

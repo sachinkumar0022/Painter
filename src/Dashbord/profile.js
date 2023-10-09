@@ -11,10 +11,10 @@ import {
 
 const profile = () => {
     return (
-        <View style={{backgroundColor:'rgba(18, 18, 18, 1)'}}>
+        <View >
             <ScrollView>
                 <View>
-                    <Image source={require("../Images/my.png")} style={{  width: responsiveWidth(95),height: 160,borderRadius:10,margin:10 }} />
+                    <Image source={require("../Images/my.png")} style={{ width:'100%',height: 160,borderRadius:10,}} />
                 </View>
                 <View style={{ alignItems: 'center', marginTop: -80 }}>
                     <View>
@@ -73,7 +73,7 @@ export default profile
 
 const styles = StyleSheet.create({
     profile: {
-        height: responsiveHeight(22),
+        height: responsiveHeight(18),
         width: responsiveWidth(28), 
         borderColor: 'black',
         borderRadius: 80
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     },
     input: {
 
-        borderColor: 'white',
+        borderColor: 'black',
         borderBottomWidth: 0.5,
         
         },
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
         margin: 15
     },
     inputtxt:{
-        color:'white',
+        color:'black',
         marginTop:10
     }
 
